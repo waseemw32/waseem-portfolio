@@ -1,185 +1,530 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-        content="Waseem Al-Idrisi — Computer Science and IT graduate, developer and technology enthusiast.">
-  <title>Waseem Al-Idrisi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Waseem Al-Idrisi | Computer Science & IT</title>
+  <meta name="description" content="Waseem Al-Idrisi — Computer Science and IT graduate specializing in Flutter, Firebase, web development, and database systems.">
+  <meta name="theme-color" content="#0b1120">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="header">
-    <a class="logo" href="#home">W<span>.</span></a>
-    <button class="menu-btn" id="menuBtn"
-            aria-label="Toggle navigation">☰</button>
-    <nav id="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar container">
+      <a href="#home" class="logo">W<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Open navigation"
+              aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact" class="nav-contact">Contact me</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">COMPUTER SCIENCE & IT</p>
-        <h1>Hi, I'm <span>Waseem</span><br>Al-Idrisi</h1>
-        <h2>Software Developer</h2>
-        <p class="intro">
-          I build practical digital solutions
-          and enjoy turning ideas into useful
-          software experiences.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">
-            Explore My Work
-          </a>
-          <a class="btn secondary" href="#contact">
-            Contact Me
-          </a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="code-card">
-          <span class="dots">● ● ●</span>
-          <pre><code>const waseem = {
-  field: "Computer Science",
-  role: "Developer",
-  passion: "Technology"
-};</code></pre>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="about">
-      <p class="eyebrow">GET TO KNOW ME</p>
-      <h2>About <span>Me</span></h2>
-      <p class="section-text">
-        I am a Computer Science and Information
-        Technology graduate from Ibb University.
-        I am interested in software development,
-        databases, cloud technologies and
-        cybersecurity.
-      </p>
-      <div class="facts">
-        <div><strong>2026</strong><span>Graduation Year</span></div>
-        <div><strong>IT</strong><span>Academic Field</span></div>
-        <div><strong>Yemen</strong><span>Based In</span></div>
-      </div>
-    </section>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
 
-    <section class="section" id="skills">
-      <p class="eyebrow">WHAT I WORK WITH</p>
-      <h2>Technical <span>Skills</span></h2>
-      <div class="skill-grid">
-        <div class="skill">Python</div>
-        <div class="skill">PHP</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">C#</div>
-        <div class="skill">Flutter & Dart</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Firebase</div>
-        <div class="skill">Git & GitHub</div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <p class="eyebrow">SELECTED WORK</p>
-      <h2>Featured <span>Projects</span></h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-icon">🏫</div>
-          <h3>School Management System</h3>
-          <p>
-            An Android application for school
-            management built with Flutter,
-            Dart and Firebase services.
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            OPEN TO OPPORTUNITIES
           </p>
-          <div class="tags">
-            <span>Flutter</span><span>Firebase</span>
-          </div>
-          <a href="https://github.com/waseemw32/school-management-syst"
-             target="_blank" rel="noopener noreferrer">
-            View Project ↗
-          </a>
-        </article>
 
-        <article class="project-card">
-          <div class="project-icon">💻</div>
-          <h3>Personal Portfolio</h3>
-          <p>
-            A responsive website introducing
-            my background, technical skills
-            and software projects.
+          <h1>
+            Hi, I'm <span class="accent">Waseem</span><br>
+            Al-Idrisi.
+          </h1>
+
+          <h2 class="hero-subtitle">
+            Computer Science & IT Graduate
+          </h2>
+
+          <p class="hero-description">
+            I build practical digital solutions through mobile
+            applications, web development, and database systems.
+            I'm passionate about technology, software engineering,
+            and creating products that solve real problems.
           </p>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore my work
+              <span>↗</span>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              Let's connect
+            </a>
           </div>
-          <a href="#home">You're here ↗</a>
-        </article>
+
+          <div class="hero-meta">
+            <span>Based in Yemen</span>
+            <span class="meta-divider">/</span>
+            <span>Available for work</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+
+          <div class="code-card">
+            <div class="code-header">
+              <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="code-title">developer.js</span>
+            </div>
+
+            <div class="code-content">
+              <p><span class="code-purple">const</span>
+                <span class="code-blue">developer</span> = {</p>
+
+              <p class="indent">
+                name:
+                <span class="code-green">"Waseem"</span>,
+              </p>
+
+              <p class="indent">
+                role:
+                <span class="code-green">"Software Developer"</span>,
+              </p>
+
+              <p class="indent">
+                skills: [
+              </p>
+
+              <p class="indent-2">
+                <span class="code-green">"Flutter"</span>,
+              </p>
+
+              <p class="indent-2">
+                <span class="code-green">"Firebase"</span>,
+              </p>
+
+              <p class="indent-2">
+                <span class="code-green">"Web Development"</span>
+              </p>
+
+              <p class="indent">],</p>
+
+              <p class="indent">
+                mindset:
+                <span class="code-green">"Always learning"</span>
+              </p>
+
+              <p>};</p>
+
+              <div class="code-cursor"></div>
+            </div>
+          </div>
+
+          <div class="floating-tag tag-top">
+            <span class="tag-icon">⌘</span>
+            Problem Solver
+          </div>
+
+          <div class="floating-tag tag-bottom">
+            <span class="tag-icon">✦</span>
+            Building the future
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="section" id="certifications">
-      <p class="eyebrow">LEARNING JOURNEY</p>
-      <h2>Certifications & <span>Experience</span></h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Introduction to Cybersecurity</h3>
-          <p>IBM</p>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">01 / ABOUT ME</p>
+          <h2>Turning ideas into <span class="accent">reality.</span></h2>
         </div>
-        <div class="timeline-item">
-          <h3>Introduction to Cloud Computing</h3>
-          <p>IBM</p>
+
+        <div class="about-grid">
+          <div class="about-main">
+            <p class="about-lead">
+              I'm a Computer Science and Information Technology
+              graduate from Ibb University, with a strong interest
+              in software development and building useful
+              technology solutions.
+            </p>
+
+            <p>
+              My experience includes developing Android applications
+              with Flutter and Dart, integrating Firebase services,
+              designing web interfaces, and working with relational
+              databases.
+            </p>
+
+            <p>
+              I enjoy learning new technologies, solving technical
+              challenges, and turning requirements into reliable,
+              user-friendly applications.
+            </p>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact-card">
+              <span class="fact-number">2026</span>
+              <span class="fact-label">Graduation year</span>
+            </div>
+
+            <div class="fact-card">
+              <span class="fact-number">IT</span>
+              <span class="fact-label">Academic field</span>
+            </div>
+
+            <div class="fact-card">
+              <span class="fact-number">Yemen</span>
+              <span class="fact-label">Location</span>
+            </div>
+
+            <div class="fact-card">
+              <span class="fact-number">∞</span>
+              <span class="fact-label">Learning mindset</span>
+            </div>
+          </div>
         </div>
-        <div class="timeline-item">
-          <h3>Office Management & Secretarial Studies</h3>
-          <p>San'a'a Makers of Leaders Center</p>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">02 / TECHNICAL SKILLS</p>
+          <h2>Tools I work <span class="accent">with.</span></h2>
+          <p class="section-description">
+            Technologies and tools I use to design, develop,
+            and manage software solutions.
+          </p>
         </div>
-        <div class="timeline-item">
-          <h3>Professional Experience</h3>
-          <p>Nano Soft — Experience Certificate</p>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <div class="skill-icon">⌘</div>
+            <h3>Mobile Development</h3>
+            <p>Building cross-platform mobile applications.</p>
+            <div class="skill-tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Android</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">{ }</div>
+            <h3>Web Development</h3>
+            <p>Creating responsive websites and web applications.</p>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">◈</div>
+            <h3>Backend & Cloud</h3>
+            <p>Connecting applications to cloud-based services.</p>
+            <div class="skill-tags">
+              <span>Firebase</span>
+              <span>Authentication</span>
+              <span>Cloud Storage</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">▤</div>
+            <h3>Databases</h3>
+            <p>Organizing, storing, and managing application data.</p>
+            <div class="skill-tags">
+              <span>MySQL</span>
+              <span>Firestore</span>
+              <span>SQLite</span>
+              <span>SQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">⌘</div>
+            <h3>Programming</h3>
+            <p>Developing logical solutions using programming languages.</p>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>C#</span>
+              <span>Java</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">⌁</div>
+            <h3>Tools & Workflow</h3>
+            <p>Managing code, projects, and development workflows.</p>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Have a project in <span>mind?</span></h2>
-      <p class="section-text">
-        I am interested in professional
-        opportunities and software projects.
-      </p>
-      <div class="contact-links">
-        <a class="btn primary"
-           href="mailto:wasemealedrees@gmail.com">
-          Email Me
-        </a>
-        <a class="btn secondary"
-           href="https://www.linkedin.com/in/waseem-ali-a3937043a"
-           target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
-        <a class="btn secondary"
-           href="https://github.com/waseemw32"
-           target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">03 / SELECTED WORK</p>
+          <h2>Projects I've <span class="accent">built.</span></h2>
+          <p class="section-description">
+            Practical projects that reflect my technical interests
+            and development experience.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card featured-project">
+            <div class="project-top">
+              <div class="project-symbol">S</div>
+              <span class="project-type">MAIN PROJECT</span>
+            </div>
+
+            <h3>School Management System</h3>
+
+            <p>
+              A mobile application designed to support school
+              administration and organize educational workflows.
+              Developed using Flutter and Firebase services.
+            </p>
+
+            <div class="project-tech">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Firebase</span>
+              <span>Firestore</span>
+            </div>
+
+            <a
+              href="https://github.com/waseemw32/school-management-syst"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link">
+              View on GitHub <span>↗</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-symbol secondary-symbol">W</div>
+              <span class="project-type">PERSONAL</span>
+            </div>
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+              A responsive personal website presenting my
+              background, technical skills, projects, and
+              professional contact information.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+
+            <a
+              href="https://waseemw32.github.io/waseem-portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link">
+              Visit website <span>↗</span>
+            </a>
+          </article>
+
+        </div>
       </div>
     </section>
+
+    <!-- JOURNEY -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+
+        <div class="section-heading">
+          <p class="section-label">04 / MY JOURNEY</p>
+          <h2>Education & <span class="accent">certificates.</span></h2>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2026</span>
+              <h3>Bachelor's Degree</h3>
+              <p class="timeline-place">
+                Ibb University — Faculty of Computing
+                and Applied Sciences
+              </p>
+              <p>
+                Computer Science and Information Technology.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">CERTIFICATION</span>
+              <h3>Introduction to Cybersecurity</h3>
+              <p class="timeline-place">IBM</p>
+              <p>
+                Foundational learning in cybersecurity concepts.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">CERTIFICATION</span>
+              <h3>Introduction to Cloud Computing</h3>
+              <p class="timeline-place">IBM</p>
+              <p>
+                Foundational understanding of cloud computing.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">CERTIFICATION</span>
+              <h3>Secretarial & Office Management</h3>
+              <p class="timeline-place">
+                Makers of Leaders Center
+              </p>
+              <p>
+                Training in office administration and
+                professional organization.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">EXPERIENCE</span>
+              <h3>Professional Experience Certificate</h3>
+              <p class="timeline-place">Nano Soft</p>
+              <p>
+                Professional experience documented by the company.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="contact-card">
+          <p class="section-label">05 / GET IN TOUCH</p>
+
+          <h2>
+            Have a project in mind?<br>
+            <span class="accent">Let's talk.</span>
+          </h2>
+
+          <p class="contact-description">
+            I'm interested in professional opportunities,
+            collaborations, and projects where I can contribute
+            and continue growing as a developer.
+          </p>
+
+          <a
+            href="mailto:wasemealedrees@gmail.com"
+            class="btn btn-primary">
+            Email me <span>↗</span>
+          </a>
+
+          <div class="contact-links">
+            <a href="mailto:wasemealedrees@gmail.com">
+              Email
+            </a>
+
+            <a
+              href="https://github.com/waseemw32"
+              target="_blank"
+              rel="noopener noreferrer">
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/waseem-ali-a3937043a"
+              target="_blank"
+              rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>© 2026 Waseem Al-Idrisi. All rights reserved.</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">W<span>.</span></a>
+
+      <p>
+        Designed & built by Waseem Al-Idrisi.
+      </p>
+
+      <p>
+        © <span id="year"></span> All rights reserved.
+      </p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html>
+  </html>
